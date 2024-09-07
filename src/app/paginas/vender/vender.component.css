@@ -1,0 +1,21 @@
+.form-group {
+    position: relative;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50% , 2%);
+    
+    font-weight: bold;
+    padding: 10px;
+    border: 2px solid black;
+    width: 700px;
+
+    background-color: #258925;
+}
+
+label {
+    margin: 15px;
+}
+
+h2 {
+    margin-top: 5px;
+}

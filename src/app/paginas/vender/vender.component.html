@@ -1,0 +1,54 @@
+<div class="formulario">
+    <h2 class="text-center">Formulario de Venda</h2>
+    <form class="form-group">
+        <div>
+            <h3>Dados do vendedor</h3>
+            <label for="nome">Nome : </label>
+            <input type="text" placeholder="Ex: Antonio Silva">
+            
+            <label for="telefone">Telefone / Wpp : </label>
+            <input type="text" placeholder="(61) 9 9999-9999" mask="(00) 0 0000-0000" [(ngModel)]="telefone">
+
+            <label for="valor">Valor pretendido :</label>
+            
+            <input type="text" placeholder="R$ 12.000" mask="00.000" [(ngModel)]="valorPretendido" prefix="R$">
+        </div>
+        <div class="mb-3">
+            <label for="endereco">Endereco: </label>
+            <input type="text" placeholder="Ex: Quadra 90 Lote 12">
+
+            <label for="endereco">Cidade: </label>
+            <input type="text" placeholder="Ex: Planaltina/DF">
+
+        </div>
+
+        <div>
+            <h3>Dados do Veiculo</h3>
+
+            <label for="marca">Marca: </label>
+            <input type="text" placeholder="Ex: Chevrolet">
+            <label for="modelo">Modelo :</label>
+            <input type="text" placeholder="Ex: Celta">
+            <br>
+            <label for="ano">Ano :</label>
+            <input type="number" placeholder="Ex: 2002">
+
+            <label for="cor">Cor :</label>
+            <input type="text" placeholder="Ex: Preto">
+
+            <div>
+                <div class="mb-3">
+                    <label for="exampleFormControlTextarea1" class="form-label"><strong>Faça um breve relato do carro.</strong></label>
+                    <textarea class="form-control" id="exampleFormControlTextarea1" rows="3" placeholder="Exemplo:  'Completo - ar' , 'pneus novos' ,  'com multa de 2 mil' , 'com procuração' , 'precisa pintar o capô' , 'queimadura no teto' ..."></textarea>
+                  </div>
+                  <div class="mb-3">
+                    <label for="formFileSm" class="form-label">Insira fotos do carro</label>
+                    <input class="form-control form-control-sm" id="formFileSm" type="file">
+                  </div>
+                  <button class="btn btn-primary">
+                    Enviar
+                  </button>
+            </div>
+        </div>
+    </form>
+</div>
